@@ -45,7 +45,7 @@ const Downloads = ()=>{
                         <>
                             <div className="card">
                                 <img key={index++} onClick={()=>router.push(`/downloads/[...download]`, `/downloads/${item.id}`)} src={item.imageUrl} alt=""/>
-                                <div className="box" onClick={()=>router.push({pathname: '/detaildownloads', query: {id: item.id}})}>
+                                <div className="box" onClick={()=>router.push(`/downloads/[...download]`, `/downloads/${item.id}`)}>
                                     <span key={index} className="name">{item.name}</span>
                                 </div> <br/><br/><br/><br/>
                             </div>
